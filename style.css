@@ -196,3 +196,115 @@ body{
 .bloque-guia.destacada li:last-child {
   margin-bottom: 0;
 }
+.seccion-diario {
+  margin-top: 50px;
+  background: #161622;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.seccion-diario h2 {
+  color: #f1f5f9;
+  margin-bottom: 5px;
+}
+
+.subtitulo-diario {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.caja-diario {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+#texto-nota {
+  width: 100%;
+  height: 100px;
+  background: #0f0f18;
+  border: 1px solid #2e2e48;
+  border-radius: 10px;
+  padding: 12px;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.95rem;
+  resize: vertical;
+  outline: none;
+}
+
+#texto-nota:focus {
+  border-color: #6366f1;
+}
+
+.btn-guardar {
+  align-self: flex-end;
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn-guardar:hover {
+  background: #4f46e5;
+  transform: translateY(-2px);
+}
+
+.historial-notas h3 {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.diario-vacio {
+  color: #64748b;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.tarjeta-nota {
+  background: #0f0f18;
+  border: 1px solid #2e2e48;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 12px;
+}
+
+.nota-encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.nota-fecha {
+  color: #818cf8;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.btn-borrar-nota {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.btn-borrar-nota:hover {
+  opacity: 1;
+}
+
+.nota-contenido {
+  color: #e2e8f0;
+  font-size: 0.95rem;
+  white-space: pre-wrap; 
+  line-height: 1.5;
+}

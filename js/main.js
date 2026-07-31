@@ -1,5 +1,6 @@
 import {emociones, frasesMotivadoras} from './data.js';
 import { renderizarEmociones, actualizarFraseEnDOM } from './dom.js';
+import { inicializarDiario } from './diario.js';
 
 let intervaloFrase=null;
 
@@ -30,4 +31,5 @@ document.addEventListener('DOMContentLoaded', ()=>{
             iniciarTemporizador();
         });
     }
+    inicializarDiario();
 });
