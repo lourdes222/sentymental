@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #0f0f14;
+    color: #e0e0e0;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+.encabezado{
+    text-align: center;
+    margin-bottom: 35px;
+}
+.encabezado h1{
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+.encabezado p{
+    color: #9090a8;
+    font-size: 1rem;
+}
+.seccion-motivacion{
+    width: 100%;
+    max-width: 750px;
+    margin-bottom: 45px;
+}
+.caja-frase{
+    background: #161622;
+    border: 1px solid #2a2a3d;
+    border-radius: 18px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0 , 0, 0.4);
+}
+#texto-frase{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #f1f1f8;
+    margin-bottom: 22px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-in-out;
+}
+#btn-frase{
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+    transition: transform 0.2 ease, box-shadow 0.2s ease;
+}
+#btn-frase :hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+}
+#btn-frase :active{
+    transform: translateY(0);
+}
+.contenedor-principal{
+    width: 100%;
+    max-width: 1000px;
+}
+.grilla-emociones{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 24px;
+}
+.tarjeta-emocion{
+    background: #161622;
+    border-left: 5px solid #ccc;
+    border-radius: 14px;
+    padding: 22px;
+    box-shadow: 0 4px 16px rgba(0, 0 , 0, 0.3);
+    transition: transform 0.3  cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease;
+    will-change: transform;
+}
+.tarjeta-emocion :hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0 , 0, 0.5);
+}
+.emocion-encabezado .emoji{
+    font-size: 1.8rem;
+}
+.emocion-encabezado h3{
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+.emocion-descripcion{
+    line-height: 1.6;
+    color: #a0a0b8;
+    font-size: 0.95rem;
+}
+
+/* Botón "¿Cómo manejarla?" en la tarjeta */
+.btn-manejar {
+  display: inline-block;
+  margin-top: 15px;
+  color: #a5b4fc;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-manejar:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+.encabezado-detalle {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.btn-volver {
+  color: #94a3b8;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.btn-volver:hover {
+  color: #ffffff;
+}
+
+.contenedor-detalle {
+  width: 100%;
+  max-width: 800px;
+}
+
+.caja-guia {
+  background: #161622;
+  border-radius: 16px;
+  padding: 35px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.guia-titulo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.emoji-grande {
+  font-size: 3rem;
+}
+
+.bloque-guia {
+  margin-bottom: 28px;
+}
+
+.bloque-guia h3 {
+  font-size: 1.2rem;
+  color: #f1f5f9;
+  margin-bottom: 12px;
+}
+
+.bloque-guia ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+.bloque-guia.destacada {
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bloque-guia.destacada ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bloque-guia.destacada li {
+  margin-bottom: 12px;
+}
+
+.bloque-guia.destacada li:last-child {
+  margin-bottom: 0;
+}
